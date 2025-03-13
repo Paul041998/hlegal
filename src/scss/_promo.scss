@@ -1,0 +1,11 @@
+.promo__services {
+  & h2 {
+    @include text-grad;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &-item_icon {
+    
+  }
+}
