@@ -1,0 +1,28 @@
+.tabs {
+  &__list {
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    color: $text-color;
+    overflow: auto;
+    margin-right: 30px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 38px;
+    }
+  }
+
+  &__link {
+    flex-shrink: 0;
+    margin-right: 30px;
+
+    &.active {
+      @include text-grad;
+    }
+  }
+
+  &__content-text:not(.active) {
+    display: none;
+  }
+}

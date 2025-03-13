@@ -87,19 +87,23 @@
   }
 
   &__burger {
+    cursor: pointer;
+
     @media (min-width: 768px) {
       display: none;
     }
   }
 
   &__logo {
+    width: 70px;
     margin-bottom: 20px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-lg) {
       position: absolute;
       left: 40px;
       top: 50%;
       transform: translateY(-50%);
+      width: 130px;
     }
   }
 }
@@ -129,13 +133,15 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    @media (min-width: 768px) {
+    cursor: pointer;
+
+    @media (min-width: $breakpoint-md) {
       display: none;
     }
   }
 
   &-list {
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-md) {
       display: flex;
     }
   }
@@ -143,7 +149,7 @@
   &-item {
     margin-bottom: 15px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-md) {
       margin: 0 15px 0 0;
     }
   }
@@ -156,12 +162,34 @@
     color: #fff;
     font-size: 16px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
       background: #f5f5fa;
       color: #24a3ff;
       display: block;
       padding: 15px;
       border-radius: 12px;
     }
+  }
+}
+
+.icon-facebook {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+
+  &:hover {
+    fill: #f0145a;
+  }
+}
+
+.header__burger {
+  width: 32px;
+  height: 32px;
+  border-radius: $radius-sm;
+
+  &:active,
+  &:focus {
+    background: #e6e6f0; /*!important;*/
   }
 }
