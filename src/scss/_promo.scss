@@ -1,11 +1,52 @@
 .promo__services {
-  & h2 {
+  &-list {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-heading {
     @include text-grad;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 30px;
   }
 
-  &-item_icon {
-    
+  &-item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      width: 30%;
+    }
+
+    &_title {
+      color: $regular-color;
+      font-size: 22px;
+      font-weight: 700;
+      padding-bottom: 15px;
+    }
+
+    &_description {
+      color: $basic-white;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.62;
+    }
+  }
+
+  &-icon {
+    width: 64px;
+    background: $basic-white;
+    padding: 14px;
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+    margin-bottom: 30px;
   }
 }
