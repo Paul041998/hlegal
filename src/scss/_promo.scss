@@ -1,4 +1,5 @@
 .promo__services {
+  padding-bottom: 30px;
   &-list {
     @media screen and (min-width: $breakpoint-md) {
       display: flex;
@@ -19,7 +20,7 @@
   }
 
   &-item {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
     @media screen and (min-width: $breakpoint-md) {
       width: 45%;

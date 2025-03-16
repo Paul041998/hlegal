@@ -6,10 +6,50 @@ body {
 }
 
 a {
-  color: #24a3ff;
+  color: $regular-color;
   text-decoration: none;
   &:hover {
-    color: #f0145a;
+    color: $accent-color;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cat-link {
+  color: $regular-color;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-color: inherit;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-left: 2px;
+  }
+
+  &:hover {
+    color: $accent-color;
   }
 }
 
@@ -40,6 +80,10 @@ a {
   max-width: 1720px;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 0 60px;
+  }
 }
 
 .title {
@@ -49,10 +93,25 @@ a {
 
 .bg-box {
   color: #fff;
+  margin-bottom: 60px;
   background: linear-gradient(
     228.57deg,
     #323264 11.93%,
     #323264 57.17%,
     #643e72 87.46%
   );
+  border-radius: 0 0 12px 12px;
+}
+
+.article-date {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+
+
+.gradient-text {
+  @include text-grad;
 }

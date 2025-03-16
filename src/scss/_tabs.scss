@@ -19,13 +19,17 @@
     }
 
     @media screen and (min-width: $breakpoint-lg) {
-      width: 40%;
+      width: 50%;
       flex-direction: column;
       text-align: right;
       padding-right: 60px;
       margin-right: 0;
       justify-content: center;
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 40%;
     }
   }
   &__link {
@@ -34,11 +38,11 @@
 
     &:hover {
       cursor: pointer;
-      @include text-grad;
+      @include tabs_text-grad;
     }
 
     &.active {
-      @include text-grad;
+      @include tabs_text-grad;
     }
   }
 
@@ -47,11 +51,15 @@
     border-width: 4px 0 0 0;
 
     @media screen and (min-width: $breakpoint-lg) {
-      width: 60%;
+      width: 50%;
       border-width: 0 0 0 4px;
       padding-left: 60px;
       display: flex;
       align-items: center;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 60%;
     }
   }
 

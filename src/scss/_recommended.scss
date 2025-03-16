@@ -1,0 +1,72 @@
+.recommended {
+  background: $bg-color;
+  padding-top: 30px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: 30px;
+  }
+
+  &__heading {
+    padding-bottom: 30px;
+  }
+
+  &__list {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      padding: 0 160px;
+    }
+
+    &-item {
+      background: $basic-white;
+      border-radius: 8px;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 45%;
+        flex-grow: 1;
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: $breakpoint-lg) {
+        width: 30%;
+      }
+
+      &_text {
+        padding: 30px;
+
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          padding-bottom: 15px;
+        }
+      }
+
+      &_description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: $main-text-color;
+        border: solid #e6e6f0;
+        border-width: 4px 0 0 0;
+        padding: 15px 0;
+        margin-top: 11px;
+      }
+
+      &_img {
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
