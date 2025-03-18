@@ -36,6 +36,11 @@
         width: 30%;
       }
 
+      &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
       &_text {
         padding: 30px;
 
