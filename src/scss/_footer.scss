@@ -1,33 +1,76 @@
 .footer {
+  background: $bg-color;
   display: flex;
   flex-direction: column;
-  
-  background: $bg-color;
-  &__border {
-   
+
+  @media screen and (min-width: $breakpoint-md) {
+    align-items: center;
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    align-items: stretch;
   }
 
-  &__box{
+  &__border {
+    border-top: 2px solid $separator-color;
+    padding-bottom: 30px;
+    
+    @media screen and (min-width: $breakpoint-md){
+      align-self: stretch;
+    }
 
+    
+  }
 
-    &-adresse{
+  &__box {
+    padding-bottom: 30px;
+
+    
+
+    @media screen and (min-width: $breakpoint-lg) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+    }
+
+    &-adresse {
       font-size: 16px;
       font-weight: 400;
       color: $main-color;
       text-align: center;
+
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+      }
+
+      &__item {
+        display: flex;
+        justify-content: center;
+      }
     }
 
-    &-social{
+    &-social {
       text-align: center;
+      padding-bottom: 30px;
+
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        
+        justify-content: space-around;
+      }
+
+      &__item {
+        // padding: 8px;
+      }
     }
 
-    &-copyrights{
+    &-copyrights {
       font-size: 16px;
       font-weight: 400;
       color: $text-color;
       text-align: center;
     }
   }
-
-  
 }

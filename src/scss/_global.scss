@@ -120,7 +120,13 @@ h4 {
   @include text-grad;
 }
 
-.footer__link{
+.footer__link-loc{
+  font-size: 12px;
+  font-weight: 700;
+  color: $regular-color;
+  text-transform: uppercase;
+}
+.footer__link-mail{
   font-size: 16px;
   font-weight: 700;
   color: $regular-color;
