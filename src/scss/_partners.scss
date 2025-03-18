@@ -19,11 +19,16 @@
     @media screen and (min-width: $breakpoint-xxl) {
       padding: 0 100px;
       border-radius: $radius-md;
+      margin-bottom: 60px;
     }
 
     &-item {
       @media screen and (min-width: $breakpoint-md) {
         width: 33.33%;
+      }
+
+      @media screen and (min-width: $breakpoint-lg) {
+        width: 25%;
       }
 
       &__link {
@@ -33,6 +38,11 @@
         align-items: center;
         justify-content: center;
         transition: transform 0.3s ease, background-color 0.3s ease;
+
+        img {
+          max-height: 100%;
+          width: auto;
+        }
 
         &:hover {
           transform: scale(1.1);
