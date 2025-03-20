@@ -138,6 +138,8 @@
     text-align: center;
     border-radius: 12px 12px 0 0;
     transition: transform 0.2s linear;
+
+    
   }
 
   
@@ -147,8 +149,6 @@
 
     &+.header__burger{
       background: $separator-color;
-      
-      
 
       use{
         stroke: #323264;
@@ -201,6 +201,12 @@
       padding: 15px;
       border-radius: 12px;
       font-size: 24px;
+
+      &:hover{
+        background: $separator-color;
+      }
+
+      
     }
   }
 }
@@ -221,9 +227,7 @@
   height: 32px;
   display: inline-block;
   border-radius: $radius-sm;
-  
 
-  
 
   &:active,
   &:focus {
