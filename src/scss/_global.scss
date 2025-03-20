@@ -52,7 +52,7 @@ h4 {
     color: $accent-color;
   }
 
-  &:hover::after{
+  &:hover::after {
     margin-left: 7px;
   }
 }
@@ -97,7 +97,7 @@ h4 {
 
 .bg-box {
   color: #fff;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   background: linear-gradient(
     228.57deg,
     #323264 11.93%,
@@ -114,26 +114,51 @@ h4 {
   color: $text-color;
 }
 
-
-
 .gradient-text {
   @include text-grad;
 }
 
-.footer__link-loc{
+.footer__link-loc {
   font-size: 12px;
   font-weight: 700;
   color: $regular-color;
   text-transform: uppercase;
 }
-.footer__link-mail{
+.footer__link-mail {
   font-size: 16px;
   font-weight: 700;
   color: $regular-color;
 }
 
-.footer__link-tel{
+.footer__link-tel {
   color: $second-color;
   font-size: 16px;
   font-weight: 700;
+}
+
+.shadow__box {
+  margin-bottom: 60px;
+
+  &-dark {
+    height: 10px;
+    background: #cacadb;
+    border-radius: 0 0 12px 12px;
+    margin: 0 20px;
+  }
+
+  &-light {
+    height: 10px;
+    background: #e7e7f2;
+    border-radius: 0 0 12px 12px;
+    margin: 0 40px;
+  }
+}
+
+
+.services-about{
+  margin-top: 60px;
+}
+
+.footer-services{
+  padding-top: 30px ;
 }

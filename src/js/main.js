@@ -12,6 +12,37 @@ import "../scss/style.scss";
   const isClose = document.querySelector(".header__menu-close");
   const navigation = document.querySelector(".header__menu");
 
+
+  if (isOpen && navigation) {
+    isOpen.addEventListener("click", () => {
+      navigation.classList.toggle("active");
+    });
+  }
+
+  if (isClose && navigation) {
+    isClose.addEventListener("click", () => {
+      navigation.classList.remove("active");
+    });
+  }
+
+  document.addEventListener("click", (event) => {
+    if (
+      navigation &&
+      !navigation.contains(event.target) &&
+      isOpen &&
+      !isOpen.contains(event.target)
+    ) {
+      navigation.classList.remove("active");
+    }
+  });
+})();
+
+(function () {
+  const isOpen = document.querySelector(".services-header__burger");
+  const isClose = document.querySelector(".services-header__menu-close");
+  const navigation = document.querySelector(".services-header__menu");
+
+
   if (isOpen && navigation) {
     isOpen.addEventListener("click", () => {
       navigation.classList.toggle("active");
@@ -71,3 +102,5 @@ const swiper = new Swiper(".swiper", {
 
   
 });
+
+

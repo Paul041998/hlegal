@@ -2,8 +2,9 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg" href="src/img/icons/symbol.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>hlegal</title>
   </head>
   <body>
@@ -33,7 +34,9 @@
               </li>
               <li class="d-none d-s-block">
                 <a href="" target="_blank ">
-                  <i class="icon-facebook"></i>
+                  <svg width ="24" height="24" class="header-icon">
+                    <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-facebook">
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -46,9 +49,9 @@
                 />
               </strong>
               <div class="header__menu">
-                <span class="header__menu-close">
-                  <img src="src/img/icons/close-btn.svg" alt="" />
-                </span>
+                <svg class="header__menu-close" width="32" height="32"  >
+                  <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-close-btn">
+                </svg>
                 <ul class="header__menu-list">
                   <li class="header__menu-item">
                     <a href="" class="header__menu-link">about us</a>
@@ -67,9 +70,9 @@
                   </li>
                 </ul>
               </div>
-              <span class="header__burger"
-                ><img src="src/img/icons/burger-icon.svg" alt="" />
-              </span>
+              <svg class="header__burger">
+                <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-burger-icon">
+            </svg>
             </div>
           </header>
           <section class="intro">
@@ -77,14 +80,10 @@
             <a
               href="#tabs"
               class="intro__anchor"
-              aria-label="scroll to about section"
-            >
-              <img
-                src="src/img/icons/scroll.svg"
-                width="42"
-                height="42"
-                alt="tabs"
-              />
+              aria-label="scroll to about section">
+              <svg  width="42" height="42"  class="intro_icon">
+                <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Scroll">
+              </svg>
             </a>
           </section>
           <div class="tabs" id="tabs">
@@ -134,14 +133,14 @@
             </div>
           </div>
           <section class="promo__services">
-            <a href="#" class="cat-link" >services</a>
+            <a href="services.html" class="cat-link" >services</a>
             <h2 class="promo__services-heading">What can we do better than others?</h2>
             <div class="promo__services-list">
               <div class="promo__services-item">
-                <svg class="promo__services-icon">
+                <svg class="promo__services-icon"   >
                   <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Ecommerce">
                 </svg>
-                <h3 class="promo__services-item_title"><a href="">IT and e-commerce</a> </h3>
+                <h3 class="promo__services-item_title"><a href="#">IT and e-commerce</a> </h3>
                 <p class="promo__services-item_description">
                   An endless stream of contracts, tax issues, labor relations,
                   corporate papers - legal work distracts you from doing
@@ -153,7 +152,7 @@
                 <svg class="promo__services-icon">
                   <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Support">
                 </svg>
-                <h3 class="promo__services-item_title"><a href="">Comprehensive daily legal support</a> </h3>
+                <h3 class="promo__services-item_title"><a href="#">Comprehensive daily legal support</a> </h3>
                 <p class="promo__services-item_description">
                   In addition, over time, the work will become the same type and
                   uninteresting for a full-time lawyer. And we know very well
@@ -162,10 +161,10 @@
                 </p>
               </div>
               <div class="promo__services-item">
-                <svg class="promo__services-icon">
+                <svg class="promo__services-icon" >
                   <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Coprorate">
                 </svg>
-                <h3 class="promo__services-item_title"><a href="">Structuring corporate relationships</a></h3>
+                <h3 class="promo__services-item_title"><a href="#">Structuring corporate relationships</a></h3>
                 <p class="promo__services-item_description">
                   Instead of just providing legal services, we will hire a
                   lawyer or a whole team that will fit into the daily life of
@@ -176,7 +175,7 @@
                 <svg class="promo__services-icon">
                   <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Trust">
                 </svg>
-                <h3 class="promo__services-item_title"><a href="">Building contractual relations</a></h3>
+                <h3 class="promo__services-item_title"><a href="#">Building contractual relations</a></h3>
                 <p class="promo__services-item_description">
                   Once a week, or week after month, you have your own lawyer by
                   your side. Anyone in the company can catch it at the coffee
@@ -188,7 +187,7 @@
                 <svg class="promo__services-icon">
                   <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Protection">
                 </svg>
-                <h3 class="promo__services-item_title"><a href="">Protection of business, intellectual property</a></h3>
+                <h3 class="promo__services-item_title"><a href="#">Protection of business, intellectual property</a></h3>
                 <p class="promo__services-item_description">
                   And all the other time he will work on new diverse projects,
                   so he will definitely not stop in professional development.
@@ -200,7 +199,7 @@
                 <svg class="promo__services-icon">
                   <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-Court">
                 </svg>
-                <h3 class="promo__services-item_title"><a href="">Judicial representation</a></h3>
+                <h3 class="promo__services-item_title"><a href="#">Judicial representation</a></h3>
                 <p class="promo__services-item_description">
                   Is it a small, medium-sized company or a market leader? Local
                   business or multinational company? Do you have your own legal
@@ -210,6 +209,10 @@
             </div>
           </section>
         </div>
+      </div>
+      <div class="shadow__box">
+        <div class="shadow__box-dark"></div>
+        <div class="shadow__box-light"></div>
       </div>
       <section class="container">
         <div class="team swiper ">
@@ -377,7 +380,10 @@
             </li>
           </ul>
           <ul class="footer__box-social">
-            <li class="footer__box-social__item"><a href=""></a></li>
+            <li class="footer__box-social__item"><a href="" >
+              <svg width ="38" height="38" class="footer-icons">
+                <use xlink:href="/src/img/icons/sprites/sprites.svg#icon-facebook">
+              </svg> </a></li>
             <li class="footer__box-social__item"><a href="tel:0800 211 927" class="footer__link-tel">0800 211 927</a></li>
             <li class="footer__box-social__item"><a href="mailto:contact@forstudy.space" class="footer__link-mail">contact@forstudy.space</a></li>
           </ul>
