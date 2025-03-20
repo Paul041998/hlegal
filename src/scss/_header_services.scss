@@ -1,4 +1,3 @@
-// header styles
 .services-header {
   position: sticky;
   left: 0;
@@ -43,10 +42,6 @@
     }
     a {
       color: inherit;
-
-      // &:hover{
-      //   color: $accent-color;
-      // }
     }
   }
 
@@ -93,6 +88,18 @@
 
   &__burger {
     cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: $radius-sm;
+
+    &:active,
+    &:focus {
+      background: $separator-color;
+    }
+
+    use {
+      stroke: #fff;
+    }
 
     @media (min-width: $breakpoint-md) {
       display: none;
@@ -108,8 +115,6 @@
     &:hover {
       filter: drop-shadow(0 0 20px $accent-color);
     }
-
-    
 
     @media (min-width: $breakpoint-md) {
       margin-bottom: 20px;
@@ -226,13 +231,12 @@
       padding: 15px;
       border-radius: 12px;
       font-size: 24px;
-      
 
-      &:hover{
+      &:hover {
         background: $separator-color;
       }
 
-      &.active{
+      &.active {
         background: $separator-color;
       }
     }
@@ -245,21 +249,5 @@
   &:hover {
     fill: $accent-color;
     transform: scale(1.5);
-  }
-}
-
-.services-header__burger {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  border-radius: $radius-sm;
-
-  &:active,
-  &:focus {
-    background: $separator-color;
-  }
-
-  use {
-    stroke: #323264;
   }
 }

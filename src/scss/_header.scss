@@ -42,10 +42,6 @@
     }
     a {
       color: inherit;
-
-      // &:hover{
-      //   color: $accent-color;
-      // }
     }
   }
 
@@ -92,11 +88,21 @@
 
   &__burger {
     cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: $radius-sm;
 
+    &:active,
+    &:focus {
+      background: $separator-color;
+    }
+
+    use {
+      stroke: #fff;
+    }
 
     @media (min-width: $breakpoint-md) {
       display: none;
-
     }
   }
 
@@ -109,21 +115,21 @@
     }
 
     @media (min-width: $breakpoint-md) {
-        margin-bottom: 20px;
-        width: 130px;
+      margin-bottom: 20px;
+      width: 130px;
     }
 
     @media (min-width: $breakpoint-lg) {
-        position: absolute;
-        left: 40px;
-        top: 50%;
-        transform: translateY(-50%);
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     img {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
 }
 
 .header__menu {
@@ -138,19 +144,15 @@
     text-align: center;
     border-radius: 12px 12px 0 0;
     transition: transform 0.2s linear;
-
-    
   }
-
-  
 
   &.active {
     transform: translateY(0);
 
-    &+.header__burger{
+    & + .header__burger {
       background: $separator-color;
 
-      use{
+      use {
         stroke: #323264;
       }
     }
@@ -162,9 +164,9 @@
     right: 20px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       background: $separator-color;
-      border-radius:$radius-sm ;
+      border-radius: $radius-sm;
     }
 
     @media (min-width: $breakpoint-md) {
@@ -202,40 +204,19 @@
       border-radius: 12px;
       font-size: 24px;
 
-      &:hover{
+      &:hover {
         background: $separator-color;
       }
-
-      
     }
   }
 }
 
-
-
-.header-icon{
+.header-icon {
   fill: $basic-white;
 
-  &:hover{
+  &:hover {
     fill: $accent-color;
   }
-  
 }
 
- .header__burger {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  border-radius: $radius-sm;
 
-
-  &:active,
-  &:focus {
-    background: $separator-color;
-  }
-
-use{
-  stroke: #323264;
-}
-
-}

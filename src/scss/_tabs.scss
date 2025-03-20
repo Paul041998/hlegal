@@ -29,8 +29,13 @@
     }
 
     @media screen and (min-width: $breakpoint-xl) {
+      width: 45%;
+    }
+
+    @media screen and (min-width:$breakpoint-xxl) {
       width: 40%;
     }
+
   }
   &__link {
     flex-shrink: 0;
@@ -59,6 +64,10 @@
     }
 
     @media screen and (min-width: $breakpoint-xl) {
+      width: 55%;
+    }
+
+    @media screen and (min-width:$breakpoint-xxl) {
       width: 60%;
     }
   }
