@@ -23,6 +23,12 @@
     }
 
     &-item {
+      transition: all 0.2s ease;
+
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.25);
+      }
       @media screen and (min-width: $breakpoint-md) {
         width: 33.33%;
       }
@@ -39,15 +45,15 @@
         justify-content: center;
         transition: transform 0.3s ease, background-color 0.3s ease;
 
-        img {
-          max-height: 100%;
-          width: auto;
-        }
+        // img {
+        //   max-height: 100%;
+        //   width: auto;
+        // }
 
-        &:hover {
-          transform: scale(1.1);
-          
-        }
+        // &:hover {
+        //   transform: scale(1.1);
+
+        // }
       }
     }
   }

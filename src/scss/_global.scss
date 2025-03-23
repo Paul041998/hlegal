@@ -46,10 +46,12 @@ h4 {
     display: inline-block;
     transform: rotate(45deg);
     margin-left: 2px;
+    
   }
 
   &:hover {
     color: $accent-color;
+    
   }
 
   &:hover::after {
