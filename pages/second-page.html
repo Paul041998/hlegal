@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body class="container">
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit alias voluptas consequatur facere rerum molestias pariatur quos ad nihil! Et aliquam nulla debitis dignissimos blanditiis eius, libero vero eos.
-
-	<script type="module" src="/src/js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-box">
+      <div class="container">
+        <header class="services-sub__header">
+          <ul class="services-sub__header__top-line">
+            <li>
+              <ul class="services-sub__header__lang-list">
+                <li class="services-sub__header__lang-item">
+                  <a class="services-sub__header__lang-link" href="#">УК</a>
+                </li>
+                <li class="services-sub__header__lang-item">
+                  <a class="services-sub__header__lang-link active" href="#"
+                    >EN</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="d-none d-s-block">
+              <address class="header__adresse">
+                Kyiv, Mechnikova str, 14/1
+              </address>
+            </li>
+            <li>
+              <a href="tel:0800211927" class="header__tel">0800 211 927</a>
+            </li>
+            <li class="d-none d-s-block">
+              <a href="#" target="_blank">
+                <svg width="24" height="24" class="header-icon">
+                  <use
+                    xlink:href="/src/img/icons/sprites/sprites.svg#icon-facebook"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="services-sub__header__bottom-line">
+            <strong class="services-sub__header__logo">
+              <a href="../index.html">
+                <img src="../src/img/images/servise-logo.svg" alt="" />
+              </a>
+            </strong>
+            <div class="services-sub__header__menu">
+              <svg
+                class="services-sub__header__menu-close"
+                width="32"
+                height="32"
+              >
+                <use
+                  xlink:href="/src/img/icons/sprites/sprites.svg#icon-close-btn"
+                />
+              </svg>
+              <ul class="services-sub__header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">about us</a>
+                </li>
+                <li class="services-sub__header__menu-item">
+                  <a href="services.htmln" class="header__menu-link"
+                    >services</a
+                  >
+                </li>
+                <li class="services-sub__header__menu-item">
+                  <a href="#" class="header__menu-link">team</a>
+                </li>
+                <li class="services-sub__header__menu-item">
+                  <a href="#" class="header__menu-link">publications</a>
+                </li>
+                <li class="services-sub__header__menu-item">
+                  <a href="#" class="header__menu-link">contact</a>
+                </li>
+              </ul>
+            </div>
+            <svg class="header__burger">
+              <use
+                xlink:href="/src/img/icons/sprites/sprites.svg#icon-burger-icon"
+              />
+            </svg>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="shadow__box">
+      <div class="shadow__box-dark"></div>
+      <div class="shadow__box-light"></div>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>

@@ -24,6 +24,8 @@
   &-item {
     padding-bottom: 30px;
 
+    
+
     @media screen and (min-width: $breakpoint-md) {
       width: 45%;
     }
@@ -68,3 +70,5 @@
     ;
   }
 }
+
+

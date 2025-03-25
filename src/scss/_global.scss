@@ -8,6 +8,7 @@ body {
 a {
   color: $regular-color;
   text-decoration: none;
+  transition: all 0.2s ease;
   &:hover {
     color: $accent-color;
   }
@@ -44,18 +45,22 @@ h4 {
     border-width: 2px 2px 0 0;
     border-style: solid;
     display: inline-block;
+    vertical-align: middle;
     transform: rotate(45deg);
     margin-left: 2px;
+    transition: all 0.2s ease;
     
   }
 
   &:hover {
     color: $accent-color;
     
+    
   }
 
   &:hover::after {
     margin-left: 7px;
+    
   }
 }
 
